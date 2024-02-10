@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="html" encoding="utf-8" indent="yes" />
@@ -5,7 +6,7 @@
         <html lang="en">
             <body>
                 <math>
-                    <xsl:apply-templates />
+                    <xsl:apply-templates/>
                 </math>
             </body>
         </html>
