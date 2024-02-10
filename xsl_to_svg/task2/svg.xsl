@@ -5,7 +5,7 @@
             <body>
                 <p>Авторство</p>
                 <h4 id="author" title="GossJS">Константин Воронович</h4>
-
+                <xsl:apply-templates />
             </body>
         </html>
     </xsl:template>
@@ -22,7 +22,7 @@
         </xsl:attribute>
     </xsl:template> 
 
-    <xsl:template match="/root/графика/@высота">
+    <xsl:template match="графика/@высота">
         <xsl:attribute name="height">
             <xsl:value-of select="." />
         </xsl:attribute>
@@ -30,7 +30,7 @@
 
     <xsl:template match="графика/эллипс">
         <ellipse>
-            <xsl:apply-templates />
+            <xsl:apply-templates select="@*|node()" />
         </ellipse>
     </xsl:template>
 
@@ -74,5 +74,11 @@
         <xsl:attribute name="ry">
             <xsl:value-of select="." />
         </xsl:attribute>
+    </xsl:template>
+    
+    <xsl:template match="@*|node()">
+        <xsl:copy>
+            <xsl:apply-templates select="@*|node()" />
+        </xsl:copy>
     </xsl:template>
 </xsl:stylesheet>
