@@ -2,27 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
     <title>WEB-Portfolio</title>
   </head>
-  <body>
-    <h1>&copy;VKostya WEB-Portgolio</h1>
-    <h2>Список лабораторных работ</h2>
-    <ol>
-        <li>
-            Введение в XSL
-        </li>
-        <a href="https://kodaktor.ru/g/xsl_intro" >Задание</a>
-        <a href="https://github.com/VKostya/VKostya.github.io/tree/master/xsl_to_svg" >Репозиторий</a>
-        <a href="https://vkostya.github.io/xsl_to_svg/index.html" >Просмотр</a>
-        <li>TBC...</li>
-    </ol>
-  </body>
-  <footer style="position: fixed; left: 0;
-  bottom: 0; width: 100%;text-align: center;
-  padding: 3px; background-color: DarkSalmon;
-  color: white;">
-    <p>2023-2025 Веб-технологии, факультет програмной инженерии и компьютерной техники</p>
-    <p>&copy;Воронович Константин, kostya.voronovich@mail.ru</p>
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://vkostya.github.io">
+          VKostya Веб-портфолио
+        </a>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Поиск лаб
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#xsl_svg">Введение в XSL</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+  <body class="d-flex flex-column min-vh-100">
+    <h2 style="text-align: center;">Список лабораторных работ</h2>
+    <p></p>
+    <div id="xsl_svg" class="card text-center">
+      <div class="card-header">
+        <h3>
+          Введение в XSL
+        </h3>
+      </div>
+      <div class="card-body">
+        <div class="btn-group">
+          <a href="https://kodaktor.ru/g/xsl_intro" class="btn btn-outline-primary">Задание</a>
+          <a href="https://github.com/VKostya/VKostya.github.io/tree/master/xsl_to_svg"class="btn btn-outline-primary">
+            Репозиторий
+            <span class="fa fa-github button__icon"></span>
+          </a>
+          <a href="https://vkostya.github.io/xsl_to_svg/index.html" class="btn btn-outline-primary">Просмотр</a>
+        </div>
+      </div>
+    </div>
+  </body>  
+  <footer class="mt-auto text-center" style="color: lightskyblue">
+    <p style="font-size: small; color: darkgrey;"><b>&copy;Воронович Константин, kostya.voronovich@mail.ru</b>
+      <br>2023-2025 Веб-технологии, факультет програмной инженерии и компьютерной техники<br>
+     За основу портфолио был взят пример из кодактора
+    </p>
   </footer>
 </html>
