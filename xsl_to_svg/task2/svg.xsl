@@ -5,7 +5,7 @@
             <body>
                 <p>Авторство</p>
                 <h4 id="author" title="GossJS">Константин Воронович</h4>
-                <a href="https://github.com/VKostya/VKostya.github.io/blob/master/xsl_to_svg/task2/svg.xsl">Посмотреть XSLT</a><br>
+                <a href="https://github.com/VKostya/VKostya.github.io/blob/master/xsl_to_svg/task2/svg.xsl">Посмотреть XSLT</a>
                 <a href="https://vkostya.github.io/xsl_to_svg/index.html">Вернуться назад</a>
                 <xsl:apply-templates />
             </body>
